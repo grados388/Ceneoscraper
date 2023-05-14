@@ -16,3 +16,12 @@
 | Tresc opinii | content | div.user-post\_\_text |
 | Wady | cons | div.review-feature\_\_title—negatives ~ div.review-feature\_\_item |
 | Zalety | prons | div.review-feature\_\_title—positives ~ div.review-feature\_\_item |
+
+## wykorzystane biblioteki
+-Requests
+-BeautifulSoup
+-Os
+-Sson
+-Pandas
+-Matplotlib
+-Numpy
