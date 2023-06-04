@@ -23,4 +23,12 @@ Srednia ocena wynosi {stats["average_score"]:.2f}""")
 
 score = opinions.score.value_counts().reindex(list(np.arange(0,5.5,0.5)),fill_value=0)
 score.plot.bar()
+
+recommendation = opinions["recommendation"].value_counts(dropna = False)
+recommendation.plot.pie(
+    autopct = "%1.1f%%",
+    labels = ["polecam", "nie polecam", "brak zdania"],
+    colors = ["blue","yellow","red"] 
+)
+
 plt.show()
